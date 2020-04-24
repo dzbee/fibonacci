@@ -1,5 +1,17 @@
 {% extends "bootstrap/base.html" %}
 
+{% block title %}
+  {% if title %}
+    Fibonacci Sequence Service -- {{ title }}
+  {% else %}
+    Fibonacci Sequence Service
+  {% endif %}
+{% endblock %}
+
+{% block navbar %}
+  {% include "header.html" %}
+{% endblock %}
+
 {% block content %}
-This is the base template.
+  This is the base template.
 {% endblock %}
