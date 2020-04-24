@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 
 from services.fibonacci import register_fibonacci_endpoints
@@ -10,7 +10,7 @@ register_fibonacci_endpoints(app)
 
 @app.route("/")
 def index():
-    return 'Hello world!'
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
