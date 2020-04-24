@@ -1,6 +1,6 @@
 import sys
 
-def fibonacci(n):
+def compute_sequence(n):
     low = 0
     high = 1
     sequence = [low, high]
@@ -13,4 +13,4 @@ def fibonacci(n):
     return sequence[:n]
 
 if __name__ == '__main__':
-    print(fibonacci(int(sys.argv[1])))
+    print(compute_sequence(int(sys.argv[1])))
