@@ -9,4 +9,4 @@ def register_fibonacci_endpoints(app):
 
     @app.route('/fibonacci/<n>')
     def fibonacci_n(n):
-        return str(compute_sequence(int(n)))
+        return str(fibonacci(int(n)))
