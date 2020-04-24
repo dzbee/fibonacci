@@ -1,6 +1,6 @@
 import sys
 
-def compute_sequence(n):
+def fibonacci(n):
     low = 0
     high = 1
     sequence = [low, high]
