@@ -1,8 +1,10 @@
 from flask import Flask
+from flask_bootstrap import Bootstrap
 
 from services.fibonacci import register_fibonacci_endpoints
 
 app = Flask(__name__)
+Bootstrap(app)
 
 register_fibonacci_endpoints(app)
 
