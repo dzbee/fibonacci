@@ -5,4 +5,4 @@ WORKDIR /app
 
 RUN pip install -r build/requirements.txt
 
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD gunicorn --bind 0.0.0.0:$PORT wsgi
