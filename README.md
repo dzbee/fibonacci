@@ -1,0 +1,1 @@
+Simple Flask app for demonstrating version control, Python modularity, Jinja templating, CI with Jenkins, Docker, and deploying to Heroku during lecture.
